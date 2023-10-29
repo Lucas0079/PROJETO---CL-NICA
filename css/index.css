@@ -1,0 +1,289 @@
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+/* TOPO */
+
+.cabeçalho{
+    width: 100%;
+    background-color: aqua;
+}
+
+.container-topo{
+    max-width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.lista-links {
+    display: flex;
+    list-style: none;
+}
+
+.lista-links a{
+    margin: 0px 40px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lista-links a:hover{
+    color: rgb(6, 75, 143);
+}
+
+
+main{
+    margin-bottom: 60px;
+}
+
+.banner{
+    background-image: url("../assets/recepcao.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+}
+.bloco-texto-banner{
+    color: #fff;
+    font-size: 40px;
+}
+
+section{
+    padding: 20px 0px;
+}
+
+.bloco-texto-sobre{
+    text-align: center;
+    margin: 0px auto;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+.bloco-texto-sobre h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: rgb(78, 78, 78);
+}
+
+.bloco-texto-sobre p{
+    font-size: 18px;
+    color: rgb(136, 135, 135);
+}
+
+.bloco-informacoes-sobre{
+    margin: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.bloco-informacoes-sobre ul{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.bloco-informacoes-sobre h2{
+    color: rgb(78, 78, 78);
+}
+
+.bloco-informacoes-sobre ul li{
+    font-size: 18px;
+    color: rgb(136, 135, 135);
+}
+
+figure{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+figure img{
+    width: 300px;
+}
+
+figure div{
+    box-shadow: 0px 0px 10px 5px rgb(144, 144, 144);
+    transition: 1s;
+}
+
+figure div:hover{
+    transform: scale(1.05);
+}
+
+figcaption{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.button{
+    background-color: rgb(15, 233, 241);
+    text-align: center;
+    padding: 20px;
+    width: 10%;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.button:hover{
+    transform: scale(1.05);
+    border-radius: 10px;
+    color:rgb(15, 233, 241);
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 2px grey;
+}
+
+.button-pai{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px;
+}
+
+#contato{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px auto;
+}
+
+#contato p{
+    font-size: 18px;
+}
+
+#contato h3{
+    font-size: 25px;
+}
+
+#contato h3, p{
+    padding: 20px 0px;
+}
+
+iframe{
+    width: 100%;
+}
+
+
+footer{
+    background-color: rgb(35, 103, 107);
+    text-align: center;
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 769px) and (max-width:1280px){
+    .container-topo{
+        padding: 10px;
+    }
+
+    .button{
+        width: 30%;
+    }
+}
+
+
+/* Responsividade */
+
+@media only screen and (min-width:481px) and (max-width: 768px){
+    .container-topo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 10px;
+    }
+
+    .banner{
+        height: 300px;
+        background-size: cover;
+    }
+
+    .bloco-informacoes-sobre img{
+        display: none;
+    }
+    .bloco-texto-banner h1{
+        font-size: 50px;
+    }
+
+    .bloco-texto-banner h2{
+        font-size: 30px;
+    }
+
+    
+
+    .lista-links a{
+        margin: 40px;
+    }
+
+    .button{
+        width: 60%;
+    }
+    
+    #contato{
+        padding: 10px;
+    }
+
+}
+
+
+@media only screen and (min-width: 320px) and (max-width: 480px){
+    .container-topo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner{
+        height: 200px;
+        background-size: cover;
+    }
+
+    .bloco-informacoes-sobre img{
+        display: none;
+    }
+
+    .bloco-texto-banner h1{
+        font-size: 30px;
+    }
+
+    .bloco-texto-banner h2{
+        font-size: 25px;
+    }
+
+    .link-logo img{
+        width: 90px;
+    }
+
+    .lista-links a{
+        margin: 10px;
+    }
+
+    .button{
+        width: 60%;
+    }
+    
+    #contato{
+        padding: 10px;
+    }
+}
+
+
+

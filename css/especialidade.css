@@ -1,0 +1,151 @@
+
+body{
+    font-family: 'Source Sans Pro',sans-serif;
+}
+
+
+.primeira-secao{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+    row-gap: 40px;
+}
+
+.links-especialidades{
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.links-especialidades a{
+    margin: 5px 20px;
+    border-bottom: 2px solid rgb(44, 154, 251);
+    color: black;
+}
+
+.links-especialidades a:hover{
+    color: rgb(6, 52, 37);
+}
+
+.especial-type{
+    max-width: 1024px;
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+}
+
+.bloco-tabel-img{
+    display: flex;
+}
+
+
+
+table thead tr{
+    background-color: aqua;
+    color: white;
+}
+
+.psi{
+    height: 246px;
+}
+
+.fisi{
+    height: 310px;
+}
+
+.geriatra{
+    height: 257px;
+}
+
+.pediatra{
+    height: 245px;
+}
+
+.ortopedia{
+    height: 245px;
+}
+
+table {
+    width: 800px;
+    text-align: center;
+    height: 246px;
+}
+
+table thead, table tbody tr{
+    height: 50px;
+}
+
+
+
+table tbody tr:nth-of-type(odd){
+    background-color: rgb(171, 168, 168);
+}
+
+table tbody tr:nth-of-type(even){
+    background-color: rgb(204, 199, 199);
+}
+
+.bloco-de-texto{
+    text-align: center;
+}
+
+
+@media only screen and (max-width:425px){
+    .container-topo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+    }
+    .lista-links a{
+        margin: 30px;
+        
+    }
+    .linha{
+        width: 100%;
+        border: 1px solid rgb(116, 115, 115);
+        margin: 15px;
+    }
+
+    .links-especialidades{
+        justify-content: center;
+    }
+
+    .especial-type img{
+        display: none;
+    }
+
+    .especial-type table{
+        margin: 10px;
+        width: 100%;
+    }
+
+    .bloco-de-texto{
+        margin: 10px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+
+    .especial-type img{
+        display: none;
+    }
+
+    .especial-type table{
+        margin: 10px;
+    }
+
+    .bloco-de-texto{
+        margin: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px){
+    .especial-type{
+        margin: 40px;
+    }
+}
